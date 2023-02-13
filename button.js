@@ -3,7 +3,7 @@ class Button extends PIXI.Container {
     constructor(text, width, height, x, y) {
         super();
         this.button = new PIXI.Graphics();
-        this.button.beginFill(0x000000);
+        this.button.beginFill(0xFFFFFF);
         this.button.drawRoundedRect(0, 0, width, height, 10);
         this.button.endFill();
         this.button.x = x;
@@ -16,7 +16,7 @@ class Button extends PIXI.Container {
         this.text = new PIXI.Text(text, {
           fontFamily: "Arial",
           fontSize: 18,
-          fill: 0xFFFFFF,
+          fill: 0x000000,
           align: "center"
         });
         this.text.x = x + width / 2;
@@ -37,7 +37,7 @@ class Button extends PIXI.Container {
         // this.button.beginFill(0x808080);
         // this.button.endFill();
 
-        this.text.style.fill = 0xFF0000;
+        this.text.style.fill = 0x0000FF;
 
       }
     
@@ -45,7 +45,7 @@ class Button extends PIXI.Container {
         // this.button.beginFill(0x000000);
         // this.button.endFill();
 
-        this.text.style.fill = 0xFFFFFF;
+        this.text.style.fill = 0x000000;
       }
 
       populateButtons(input_array){
