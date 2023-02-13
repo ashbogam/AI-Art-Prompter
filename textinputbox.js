@@ -32,9 +32,7 @@ class TextInputBox extends Container {
   }
 
   onKeyDown(event) {
-    if (event.key === 'Enter') {
-      this.blur();
-    } else if (event.key === 'Escape') {
+     if (event.key === 'Escape') {
       this.text.text = '';
       this.blur();
     } else if (event.key === 'Backspace') {
