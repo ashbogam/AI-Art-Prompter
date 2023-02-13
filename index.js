@@ -2,8 +2,8 @@
 // import * from '/.button';
 
 let promptTypes= ['Emotion', 'Subject', 'Scene','Style'];
-let emotionTypes= ['ecstatic', 'happy', 'sad', 'excited', 'angry', 'bored', 'curious', 'confused', 'amused', 'scared', 'surprised', 'calm', 'anxious', 'joyful', 'proud'];
-let subjectTypes=['zombie','dog', 'Popeye','Garfield', 'Ariel', 'Batman', 'Tom', 'Jerry', 'Tweety', 'Elephant', 'Dolphin', 'Rabbit', 'Squirrel', 'Cat', 'Koala'];
+let emotionTypes= ['ecstatic', 'happy', 'sad', 'excited', 'angry', 'bored', 'curious', 'amused', 'scared', 'surprised', 'calm', 'anxious', 'joyful', 'proud'];
+let subjectTypes=['zombie','dog', 'Popeye','Garfield', 'Ariel', 'Batman', 'Tom', 'Tweety', 'Elephant', 'Dolphin', 'Rabbit', 'Squirrel', 'Cat', 'Koala'];
 let sceneTypes= ['sunset', 'sunrise', 'dawn', 'rainy', 'snowy', 'stormy','foggy','windy','apocalyptic'];
 let styleTypes = ['painting', '3D', 'artistic','abstract','neon','sketch', 'oil painting','cartoonise','poster','watercolor'];
 
@@ -56,14 +56,14 @@ let textInputBoxHeight = 50;
 let textInputBox = new TextInputBox(textInputBoxX, textInputBoxY, textInputBoxWidth, textInputBoxHeight, 'Enter text here', new TextStyle({ fill: 'white' }));
 app.stage.addChild(textInputBox);
 
-const copyButtonWidth = 60;
+const copyButtonWidth = 100;
 const copyButtonHeight = 50;
 const copyButtonX = textInputBoxX + textInputBoxWidth + 20;
 const copyButtonY = textInputBoxY;
 const copyButton = new CopyButton('COPY',copyButtonWidth, copyButtonHeight, copyButtonX, copyButtonY);
 app.stage.addChild(copyButton);
 
-const buttonWidth = 150;
+const buttonWidth = 190;
 const buttonSpace = (textInputBoxWidth-(promptTypes.length*buttonWidth))/(promptTypes.length-1);
 // const buttonWidth = (textInputBoxWidth/promptTypes.length) - buttonSpace;
 const buttonHeight = 50;
