@@ -7,7 +7,7 @@ class TextInputBox extends Container {
     this.y = y;
 
     this.graphics = new Graphics();
-    this.graphics.lineStyle(2, 0x000000, 1);
+    this.graphics.lineStyle(2, 0xffffff, 1);
     this.graphics.drawRect(0, 0, width, height);
     this.addChild(this.graphics);
 

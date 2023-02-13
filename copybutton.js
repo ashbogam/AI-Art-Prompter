@@ -3,7 +3,7 @@ class CopyButton extends PIXI.Container {
     constructor(text, width, height, x, y) {
         super();
         this.button = new PIXI.Graphics();
-        this.button.beginFill(0xFFFFFF);
+        this.button.beginFill(0x3B0242);
         this.button.drawRoundedRect(0, 0, width, height, 10);
         this.button.endFill();
         this.button.x = x;
@@ -16,7 +16,7 @@ class CopyButton extends PIXI.Container {
         this.text = new PIXI.Text(text, {
           fontFamily: "Arial",
           fontSize: 18,
-          fill: 0x000000,
+          fill: 0xffffff,
           align: "center"
         });
         this.text.x = x + width / 2;
@@ -34,12 +34,12 @@ class CopyButton extends PIXI.Container {
       }
     
       onHover() {
-        this.text.style.fill = 0x0000FF;
+        this.text.style.fill = 0xff0000;
 
       }
     
       onOut() {
-        this.text.style.fill = 0x000000;
+        this.text.style.fill = 0xffffff;
       }
 
       onClick() {

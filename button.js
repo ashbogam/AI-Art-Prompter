@@ -14,8 +14,8 @@ class Button extends PIXI.Container {
         this.button.buttonMode = true;
     
         this.text = new PIXI.Text(text, {
-          fontFamily: "Arial",
-          fontSize: 18,
+          fontFamily: "Roboto",
+          fontSize: 20,
           fill: 0x000000,
           align: "center"
         });
@@ -49,7 +49,7 @@ class Button extends PIXI.Container {
       }
 
       populateButtons(input_array){
-        const buttonWidth = 95;
+        const buttonWidth = 120;
         const buttonSpace = 15;
         const buttonHeight = 50;
         const buttonX = textInputBoxX;
