@@ -56,6 +56,13 @@ let textInputBoxHeight = 50;
 let textInputBox = new TextInputBox(textInputBoxX, textInputBoxY, textInputBoxWidth, textInputBoxHeight, 'Enter text here', new TextStyle({ fill: 'white' }));
 app.stage.addChild(textInputBox);
 
+const copyButtonWidth = 60;
+const copyButtonHeight = 50;
+const copyButtonX = textInputBoxX + textInputBoxWidth + 20;
+const copyButtonY = textInputBoxY;
+const copyButton = new CopyButton('COPY',copyButtonWidth, copyButtonHeight, copyButtonX, copyButtonY);
+app.stage.addChild(copyButton);
+
 const buttonWidth = 150;
 const buttonSpace = (textInputBoxWidth-(promptTypes.length*buttonWidth))/(promptTypes.length-1);
 // const buttonWidth = (textInputBoxWidth/promptTypes.length) - buttonSpace;
